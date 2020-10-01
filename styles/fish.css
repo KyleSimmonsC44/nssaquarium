@@ -1,0 +1,30 @@
+.tip__topic{
+    text-align: center;
+}
+.fish{
+    border: 2px inset goldenrod;
+    justify-content: center;
+    background-color: royalblue;
+}
+.travel{
+    text-align: center;
+}
+.quotes{
+    border: 2px inset goldenrod;
+    justify-content: center;
+    background-color: royalblue;
+}
+.location{
+    border: 2px inset goldenrod;
+    justify-content: center;
+    background-color: royalblue;
+}
+.location__img{
+    width: 225px;
+}
+.tip{
+    border: 2px inset goldenrod;
+    justify-content: center;
+    background-color: royalblue;
+    
+}
