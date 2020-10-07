@@ -1,10 +1,24 @@
-const contentElement=document.querySelector(".containerLeft")
+import {Fish} from "./Fish.js"
+import{ useFish } from "./FishDataProvider.js"
+
+
+
 export const FishList = () =>{
-    contentElement.innerHtml +=`
+    const contentElement=document.querySelector(".containerLeft")
+
+    const fishes = useFish()
+
+    let fishHTMLRepresentations = ""
+    for (const fish of fishes) {
+        fishHTMLRepresentations += Fish(fish)
+    }
+
+
+    contentElement.innerHTML +=`
     <h3>Meet the Fish!</h3>
     <section class="fishList">
         <div class="fish">
-        PLACE HOLDER FOR NEXT JS
+       ${fishHTMLRepresentations}
         </div>
     </section>
     `
