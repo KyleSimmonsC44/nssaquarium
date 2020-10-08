@@ -17,9 +17,7 @@ export const FishList = () =>{
     contentElement.innerHTML +=`
     <h3>Meet the Fish!</h3>
     <section class="fishList">
-        <div class="fish">
        ${fishHTMLRepresentations}
-        </div>
     </section>
     `
 }
