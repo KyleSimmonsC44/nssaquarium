@@ -11,7 +11,31 @@ const fishCollection = [
         name: "John",
         food: "Smaller Fish",
         species: "Lutjanus campechanus",
-        length: 24,
+        length: 25,
+        location: "Atlantic Ocean",
+        image: "http://inventivefishing.com/posts/wp-content/uploads/2016/04/Red-snapper-95.jpg",
+    },
+    {
+        name: "John Unholy",
+        food: "Smaller Fish",
+        species: "Lutjanus campechanus",
+        length: 22,
+        location: "Atlantic Ocean",
+        image: "http://inventivefishing.com/posts/wp-content/uploads/2016/04/Red-snapper-95.jpg",
+    },
+    {
+        name: "Priest John",
+        food: "Smaller Fish",
+        species: "Lutjanus campechanus",
+        length: 21,
+        location: "Atlantic Ocean",
+        image: "http://inventivefishing.com/posts/wp-content/uploads/2016/04/Red-snapper-95.jpg",
+    },
+    {
+        name: "Big John",
+        food: "Smaller Fish",
+        species: "Lutjanus campechanus",
+        length: 85,
         location: "Atlantic Ocean",
         image: "http://inventivefishing.com/posts/wp-content/uploads/2016/04/Red-snapper-95.jpg",
     },
@@ -38,4 +62,34 @@ export const useFish= () =>{
 
 export const addFish = (fishObject) =>{
     fishCollection.push(fishObject)
+}
+export const mostHolyFish = () =>{
+    const holyfish = []
+    
+    for (const fish of fishCollection){
+
+        if(fish.length % 3 === 0){
+            holyfish.push(fish)
+        }
+    }
+    return holyfish
+}
+export const soldier = () =>{
+    const soldiers = []
+    for (const fish of fishCollection){
+        if(fish.length % 5 ===0 && fish.length % 3 !== 0){
+
+            soldiers.push(fish)
+        }
+    }
+    return soldiers
+}
+export const otherFish = () =>{
+    const other = []
+    for (const fish of fishCollection){
+        if(fish.length % 5 !==0 && fish.length % 3 !== 0){
+            other.push(fish)
+        }
+    }
+    return other
 }
