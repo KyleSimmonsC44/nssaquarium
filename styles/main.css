@@ -53,3 +53,8 @@ h3{
     flex-direction: column;
     justify-content: space-evenly;
 }
+.holyFish{
+    border: 2px inset goldenrod;
+    justify-content: center;
+    background-color: royalblue;
+}
